@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 28 18:27:55 2023
+# Process ID: 14108
+# Current directory: D:/DSD/TIMER/TIMER_PROIECT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25832 D:\DSD\TIMER\TIMER_PROIECT\TIMER.xpr
+# Log file: D:/DSD/TIMER/TIMER_PROIECT/vivado.log
+# Journal file: D:/DSD/TIMER/TIMER_PROIECT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DSD/TIMER/TIMER_PROIECT/TIMER.xpr
+INFO: [Project 1-313] Project file moved from 'D:/DSD/TIMER' since last save.
+WARNING: [Project 1-312] File not found as 'D:/DSD/TIMER/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd'; using path 'D:/DSD/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'D:/DSD/TIMER/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd'; using path 'D:/DSD/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd' instead.
+WARNING: [Project 1-312] File not found as 'D:/DSD/TIMER/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd'; using path 'D:/DSD/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xillinix/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 838.023 ; gain = 165.570
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 30 15:28:53 2023...
+as been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 28 18:28:36 2023...

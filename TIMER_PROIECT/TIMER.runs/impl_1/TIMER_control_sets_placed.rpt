@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 21 21:57:51 2023
+| Host         : Ioana running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TIMER_control_sets_placed.rpt
+| Design       : TIMER
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    41 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      2 |            1 |
+|      3 |            1 |
+|      4 |            4 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |            7 |
+| No           | No                    | Yes                    |              35 |           15 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              16 |            8 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-----------------------------+------------------------+------------------+----------------+
+|       Clock Signal       |        Enable Signal        |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++--------------------------+-----------------------------+------------------------+------------------+----------------+
+|  debouncer_ss/but_ss_sig |                             | debouncer_min/q0_reg_0 |                1 |              1 |
+|  DIVCLOCK_reg_n_0        |                             | debouncer_min/AR[0]    |                2 |              2 |
+|  debouncer_min/eqOp      |                             |                        |                2 |              3 |
+|  DIVCLOCK_reg_n_0        | counter/sec_unit[3]_i_1_n_0 | debouncer_min/AR[0]    |                2 |              4 |
+|  DIVCLOCK_reg_n_0        | counter/min_zec[3]_i_1_n_0  | debouncer_min/AR[0]    |                1 |              4 |
+|  DIVCLOCK_reg_n_0        | counter/min_unit[3]_i_1_n_0 | debouncer_min/AR[0]    |                2 |              4 |
+|  DIVCLOCK_reg_n_0        | counter/sec_zec[3]_i_1_n_0  | debouncer_min/AR[0]    |                3 |              4 |
+|  CLK_IBUF_BUFG           |                             |                        |                5 |             17 |
+|  CLK_IBUF_BUFG           |                             | debouncer_min/AR[0]    |               12 |             32 |
++--------------------------+-----------------------------+------------------------+------------------+----------------+
+
+

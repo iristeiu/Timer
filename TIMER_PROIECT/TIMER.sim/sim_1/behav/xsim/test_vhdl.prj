@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TIMER.srcs/sources_1/new/COUNTER_TIME.vhd" \
+"../../../../TIMER.srcs/sim_1/new/test.vhd" \
+
+# Do not sort compile order
+nosort
